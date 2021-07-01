@@ -1,0 +1,47 @@
+    
+body {
+    background:#854F2B;
+    font-family:Arial, Arial, Helvetica, sans-serif;
+}
+
+.boxwtext {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.bdaytext {
+    width:90%;
+    padding:10px;
+    margin:20px;
+    background:#8FCA5C;
+    border-radius: 5px;
+    box-shadow: 6px 6px #61371F;
+}
+
+.bdaytext img {
+    width:200px;
+    border: 5px solid #70B237;
+    margin-right:20px;
+    border-radius: 5px;
+    display:block;
+    margin: auto;
+}
+
+h1 {
+    color:#8FCA5C;
+    text-align:center;
+}
+
+h2 {
+    color:#61371F;
+    text-align:center;
+}
+
+a { /* a is "anchor" */
+    text-decoration: none;
+    /* ^This gets rid of the underline under links */
+    color:#61371F;
+}
+.assignment a:hover {
+    color:#4488BF;
+}
