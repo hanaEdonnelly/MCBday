@@ -39,7 +39,49 @@
           </section>
             </div>
          
-            
+         <!--Countdown-->
+         <section class="bdaytext">
+           <h2 id="countdown"></h2>
+            <script>
+          
+              //Set date to count down to
+              var countDownDate = new Date("July 26, 2021 23:00:00").getTime();
+              
+              //Update every 1 second
+              var t=setInterval(function(){
+
+              //Get today's date & time
+              var now = new Date().getTime();
+                
+              //Find difference between now & count down date
+              var diff = countDownDate-now;
+                
+              //Calculations for days, hrs, mins, secs
+              var days = Math.floor(diff/(1000*60*60*24));
+              var hrs = Math.floor((diff%(1000*60*60*24))/(1000*60*60));
+              var mins = Math.floor((diff%(1000*60*60))/(1000*60));
+              var secs = Math.floor((diff%(1000*60))/1000);
+              
+              //Display in countdown
+              document.getElementById("countdown").innerHTML=days+"d "+hrs+"h "+mins+"m "+secs+"s ";
+                
+              //If finished, print this
+              if(diff <=0) {
+
+				clearInterval(t);
+                
+                document.getElementById("countdown").innerHTML="the party has started."
+
+              }
+
+              }, 1000);
+          </script>
+             <h2>
+             days until
+           </h2>
+        </section>
+        </div>
+
        
 
     </body>
