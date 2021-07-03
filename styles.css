@@ -30,11 +30,13 @@ body {
 }
 
 h1 {
+    font-family:"Press Start 2P";
     color:#8FCA5C;
     text-align:center;
 }
 
 h2 {
+    font-family:"Press Start 2P";
     color:#61371F;
     text-align:center;
 }
@@ -46,4 +48,9 @@ a { /* a is "anchor" */
 }
 .assignment a:hover {
     color:#4488BF;
+}
+p {
+    font-family:"Press Start 2P";
+    color:#61371F;
+    text-align:left;
 }
